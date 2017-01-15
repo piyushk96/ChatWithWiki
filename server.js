@@ -18,9 +18,7 @@ app.get('/', function (req, res) {
     res.send('https://www.facebook.com/chatwithwiki/');
 });
 
-const FBurl = "https://graph.facebook.com/v2.6/me/messages?access_token=EAADAe2s8ddwBAMPZCZCl" +
-    "cHn9VAjTK8rSNoc4orl6yzu1y49TGAWCIfGWu0G4k9hAMKU13TGtZBnKzsSp5ZAbJCwqwO5OlWG7YZCeMyJ0xySk" +
-    "6Mh0tQieZCD6ZCqnhweZCHUEkhpyV0m0UZBJClDoXO0etQyJJwv6XZBtZAQn9TarrUK0gZDZD";
+const FBurl = "https://graph.facebook.com/v2.6/me/messages?access_token=<FB_ACCESS_TOKEN>";
 
 //////////////////////////////Send help message or payload message///////////////////////
 function sendMessage(id, msg){
