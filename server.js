@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.get('/', function (req, res) {
     if(req.query['hub.verify_token'] == "verifycode")
         res.send(req.query['hub.challenge']);
-    res.send('error, wrong validation token');
+    res.send('https://www.facebook.com/chatwithwiki/');
 });
 
 const FBurl = "https://graph.facebook.com/v2.6/me/messages?access_token=EAADAe2s8ddwBAMPZCZCl" +
